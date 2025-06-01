@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональный репетитор по Python">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Шрифт Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>PythonTutor - Репетитор по программированию на Python</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">Python<span>Tutor</span></div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Стоимость</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Индивидуальные уроки Python для начинающих</h1>
+            <p>Помогу освоить основы программирования и создать первый проект на Python</p>
+            <a href="#contact" class="btn">Записаться на пробный урок</a>
+        </div>
+    </section>
+
+    <section id="services" class="detailed-services">
+        <div class="container">
+            <h2 class="section-title">Мои услуги</h2>
+            
+            <!-- Основные категории услуг -->
+            <div class="service-category">
+                <h3><i class="fab fa-python"></i> Основы программирования на Python</h3>
+                <div class="service-details">
+                    <div class="detail-card">
+                        <h4>Начальный уровень</h4>
+                        <ul>
+                            <li>Знакомство с языком Python</li>
+                            <li>Базовый синтаксис и типы данных</li>
+                            <li>Простые программы и алгоритмы</li>
+                            <li>Работа в консоли</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Функции и структуры данных</h4>
+                        <ul>
+                            <li>Создание простых функций</li>
+                            <li>Списки, словари, кортежи</li>
+                            <li>Основы работы с файлами</li>
+                            <li>Простые модули</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Основы ООП</h4>
+                        <ul>
+                            <li>Понятие классов и объектов</li>
+                            <li>Простые примеры ООП</li>
+                            <li>Создание собственных классов</li>
+                            <li>Базовые методы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Практические проекты -->
+            <div class="service-category">
+                <h3><i class="fas fa-laptop-code"></i> Практические проекты</h3>
+                <div class="service-details">
+                    <div class="detail-card">
+                        <h4>Простые телеграм-боты</h4>
+                        <ul>
+                            <li>Основы работы с библиотекой python-telegram-bot</li>
+                            <li>Создание простых команд</li>
+                            <li>Хранение данных в файлах</li>
+                            <li>Развертывание на бесплатных хостингах</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Консольные приложения</h4>
+                        <ul>
+                            <li>Разработка текстовых игр</li>
+                            <li>Простые калькуляторы и утилиты</li>
+                            <li>Работа с файлами CSV и JSON</li>
+                            <li>Автоматизация рутинных задач</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Школьные проекты</h4>
+                        <ul>
+                            <li>Помощь в создании учебных проектов</li>
+                            <li>Разработка простых GUI приложений</li>
+                            <li>Визуализация данных</li>
+                            <li>Подготовка презентаций к проектам</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Подготовка к экзаменам и учебе -->
+            <div class="service-category">
+                <h3><i class="fas fa-graduation-cap"></i> Подготовка к учебе</h3>
+                <div class="service-details">
+                    <div class="detail-card">
+                        <h4>ОГЭ по информатике</h4>
+                        <ul>
+                            <li>Разбор заданий по программированию</li>
+                            <li>Типовые алгоритмы для ОГЭ</li>
+                            <li>Практика написания кода</li>
+                            <li>Разбор ошибок</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Проектная деятельность</h4>
+                        <ul>
+                            <li>Помощь в выборе темы проекта</li>
+                            <li>Поэтапная реализация проекта</li>
+                            <li>Документирование кода</li>
+                            <li>Подготовка к защите</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Как мы работаем -->
+            <div id="process" class="service-category">
+                <h3><i class="fas fa-chalkboard-teacher"></i> Как проходят занятия</h3>
+                <div class="work-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Бесплатная консультация</h4>
+                        <p>Определяем ваш уровень и обсуждаем цели обучения.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Практические занятия</h4>
+                        <p>Учимся на примерах и реальных задачах, много практики.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Поддержка между занятиями</h4>
+                        <p>Отвечаю на вопросы и помогаю с трудностями.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Результат</h4>
+                        <p>Постепенно осваиваем Python и создаем свои проекты.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Стоимость занятий</h2>
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <h3>Разовое занятие</h3>
+                    <div class="price">500 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 90 минут</li>
+                        <li><i class="fas fa-check"></i> Индивидуальный подход</li>
+                        <li><i class="fas fa-check"></i> Практические задания</li>
+                        <li><i class="fas fa-check"></i> Поддержка после занятия</li>
+                    </ul>
+                    <a href="#contact" class="btn">Записаться</a>
+                </div>
+                
+                <div class="price-card featured">
+                    <div class="badge">Выгодно</div>
+                    <h3>Пакет 4 занятий</h3>
+                    <div class="price">1 800 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 4 занятия по 90 минут</li>
+                        <li><i class="fas fa-check"></i> Экономия 200 ₽</li>
+                        <li><i class="fas fa-check"></i> Постоянная поддержка</li>
+                        <li><i class="fas fa-check"></i> Гибкое расписание</li>
+                    </ul>
+                    <a href="#contact" class="btn">Записаться</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Проектная работа</h3>
+                    <div class="price">от 3 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Разработка учебного проекта</li>
+                        <li><i class="fas fa-check"></i> Пошаговая реализация</li>
+                        <li><i class="fas fa-check"></i> Обучение в процессе</li>
+                        <li><i class="fas fa-check"></i> Помощь с защитой</li>
+                    </ul>
+                    <a href="#contact" class="btn">Обсудить проект</a>
+                </div>
+            </div>
+            
+            <div class="price-note">
+                <p>*Для школьников возможны дополнительные скидки при долгосрочном обучении.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Обо мне</h2>
+                <p>Привет! Меня зовут Иван, я начинающий репетитор по Python с опытом преподавания для школьников. В программировании главное - практика, поэтому на моих уроках мы много кодим и разбираем реальные задачи.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Индивидуальный подход к каждому ученику</li>
+                    <li><i class="fas fa-check"></i> Акцент на практическое применение знаний</li>
+                    <li><i class="fas fa-check"></i> Гибкий график и доступная цена</li>
+                    <li><i class="fas fa-check"></i> Поддержка между уроками</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=600&auto=format" 
+                    alt="Репетитор по Python" 
+                    loading="lazy"
+                    class="about-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <textarea id="message" name="message" placeholder="Ваш уровень знаний и цели обучения" required></textarea>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Python<span>Tutor</span></div>
+                <div class="footer-contacts">
+                    <p><i class="fas fa-phone"></i> +7 (ХХХ) ХХХ-ХХ-ХХ</p>
+                    <p><i class="fas fa-envelope"></i> python.tutor.codes@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Онлайн уроки</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://vk.com/pythontutorcodes"><i class="fab fa-vk"></i></a>
+                    <a href="t.me/PythonTutorCodes"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/JustRub1N"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PythonTutor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Отправка...';
+            
+            fetch('/submit_form', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    this.reset();
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                alert('Произошла ошибка при отправке формы');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            });
+        });
+
+        // Подсветка активного пункта меню при скролле
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href').includes(current)) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
